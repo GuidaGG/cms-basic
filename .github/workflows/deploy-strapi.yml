@@ -41,4 +41,5 @@ jobs:
               --name strapi \
               -p 1337:1337 \
               -v /home/${{ secrets.VPS_USER }}/strapi-uploads:/app/public/uploads \
+              -e APP_KEYS="${{ secrets.STRAPI_APP_KEYS }}"
               strapi-app
