@@ -1,0 +1,7 @@
+.dockerignore (Recommended)
+plaintext
+Kopieren
+Bearbeiten
+node_modules
+build
+public/uploads
