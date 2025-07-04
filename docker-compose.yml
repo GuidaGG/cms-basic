@@ -6,7 +6,8 @@ services:
     ports:
       - "1337:1337"
     volumes:
-      - ./uploads:/app/public/uploads  # persist uploads
+      - /home/root/cms-base/strapi-uploads:/app/public/uploads    # Persist uploads
+      - /home/root/cms-base/strapi-data:/app/.tmp/database        # Persist SQLite DB
     environment:
       DATABASE_CLIENT: sqlite
       NODE_ENV: production
