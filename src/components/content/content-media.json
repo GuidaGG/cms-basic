@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_content_medias",
+  "info": {
+    "displayName": "Content-Media",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "Media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "audios",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

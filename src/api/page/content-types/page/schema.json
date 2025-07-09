@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "pages",
   "info": {
     "singularName": "page",
@@ -10,5 +10,23 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "page": {
+      "type": "dynamiczone",
+      "components": [
+        "content.content-text",
+        "content.content-media"
+      ]
+    }
+  }
 }
