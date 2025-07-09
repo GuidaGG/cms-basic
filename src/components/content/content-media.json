@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Media": {
+    "media": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

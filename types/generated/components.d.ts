@@ -7,7 +7,7 @@ export interface ContentContentMedia extends Struct.ComponentSchema {
     icon: 'landscape';
   };
   attributes: {
-    Media: Schema.Attribute.Media<'images' | 'files' | 'audios' | 'videos'>;
+    media: Schema.Attribute.Media<'images' | 'files' | 'audios' | 'videos'>;
   };
 }
 
@@ -20,7 +20,7 @@ export interface ContentContentText extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Blocks;
     subtitle: Schema.Attribute.Text;
-    titel: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
