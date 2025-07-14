@@ -4,6 +4,10 @@ A lightweight Strapi CMS starter, configured for local development and VPS deplo
 
 Includes a content-type page with dynamic layout, featuring text and media components, along with header and footer menu functionality.
 
+Includes nodemailder and graphql.
+
+check frontend repository: https://github.com/GuidaGG/nuxt-basic
+
 ---
 
 ## 📦 Getting Started
@@ -111,6 +115,11 @@ Go to your GitHub repo → **Settings** → **Secrets and variables** → **Acti
 | `VPS_HOST`             | VPS IP                  |
 | `VPS_USER`             | VPS username            |
 | `VPS_SSH_KEY`          | Your **private** SSH key|
+| `SMTP_PASSWORD`        | not the email password but an app-password         |
+| `SMTP_USERNAME`        | the email |
+
+
+
 
 Also, add your **public key** to the VPS:
 
