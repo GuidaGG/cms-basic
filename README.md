@@ -78,7 +78,7 @@ mkdir -p /home/<USER>/<PROJECT_NAME>/strapi-{uploads,db}
 
 Follow the [official Docker installation guide for Ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
-### 4. Configure Docker Volumes
+### 4. Configure Docker Volumes and Names
 
 Update your `docker-compose.yml` file with the correct volume paths:
 
@@ -86,6 +86,16 @@ Update your `docker-compose.yml` file with the correct volume paths:
 volumes:
   - /home/root/cms-base/strapi-uploads:/app/public/uploads
   - /home/root/cms-base/strapi-db:/app/.tmp/database
+```
+Update your `deploy-strapi.yml` file with the correct volume paths and names
+
+```yaml
+      - name: Build Docker image
+        run: docker build -t strapi-app-name .
+
+      - name: Save Docker image to tarball
+        run: docker save strapi-app-name -o strapi-app-name.tar
+      (...)
 ```
 
 ### 5. GitHub Actions: Setup Secrets
