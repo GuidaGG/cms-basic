@@ -108,8 +108,8 @@ Go to your GitHub repo → **Settings** → **Secrets and variables** → **Acti
 | `ADMIN_JWT_SECRET`     | `.env`                  |
 | `API_TOKEN_SALT`       | `.env`                  |
 | `JWT_SECRET`           | `.env`                  |
-| `ENCRYPTION_KEY`       | `openssl rand -base64 32` |
-| `TRANSFER_TOKEN_SALT`  |`openssl rand -base64 32`         |
+| `ENCRYPTION_KEY`       |  `node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"` | |
+| `TRANSFER_TOKEN_SALT`  | `node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"` |         |
 | `VPS_HOST`             | VPS IP                  |
 | `VPS_USER`             | VPS username            |
 | `VPS_SSH_KEY`          | Your **private** SSH key|
