@@ -133,7 +133,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 ## 7. 🌐 Test
 
-your strapi cms should be running in <yourIPaddress>:1337
+your strapi cms should be running in YOURIPADDRESS:1337
 
 ---
 
