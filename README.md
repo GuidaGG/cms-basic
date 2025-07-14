@@ -1,6 +1,7 @@
 # 🚀 Starter CMS (Strapi-Based)
 
 A lightweight Strapi CMS starter, configured for local development and VPS deployment with Docker and GitHub Actions.
+
 Includes a content-type page with dynamic layout, featuring text and media components, along with header and footer menu functionality.
 ---
 
