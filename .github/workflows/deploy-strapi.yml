@@ -46,4 +46,6 @@ jobs:
               -e API_TOKEN_SALT="${{ secrets.API_TOKEN_SALT }}" \
               -e TRANSFER_TOKEN_SALT="${{ secrets.TRANSFER_TOKEN_SALT }}" \
               -e ENCRYPTION_KEY="${{ secrets.ENCRYPTION_KEY }}" \
+              -e SMTP_USERNAME="${{ secrets.SMTP_USERNAME }}" \
+              -e SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" \
               strapi-app
