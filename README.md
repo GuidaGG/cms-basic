@@ -32,11 +32,7 @@ node -e "console.log('JWT_SECRET=' + require('crypto').randomBytes(32).toString(
 
 Add them to your `.env` file accordingly.
 
----
-
-## 🛠️ Local Development
-
-Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
