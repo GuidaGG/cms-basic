@@ -120,7 +120,6 @@ Also, add your **public key** to the VPS:
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
----
 
 ### 6. Run the GitHub Deployment Action
 
@@ -129,13 +128,14 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 3. Select the deploy workflow.
 4. Click **"Run workflow"**.
 
----
 
 ## 7. 🌐 Test
 
 your strapi cms should be running in YOURIPADDRESS:1337
 
 ---
+
+
 
 ## 📚 Resources
 
